@@ -21,21 +21,17 @@ body{
 }
 
 :root{
-    --second-black: #1D1D1D;
+    --second-black: #2b84e9;
     --light-grey: #BFBFC1;
 }
 
-h2, h4{
-    margin: 5px;
-}
-
-h4{
-    font-weight: 300;
-}
-
 h1{
-    font-size: 40px;
+    font-size: 70px;
+    font-weight: 300;
     margin: 0;
+}
+
+h3{
     font-weight: 300;
 }
 
@@ -48,7 +44,11 @@ h1{
     position: relative;
     color: #FFF;
     text-align: center;
-    padding: 60px 10px 20px;
+    padding: 100px 20px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
  .iphone-container .notch{
@@ -71,18 +71,44 @@ h1{
     left: calc(50% - 45px);
  }
 
-.iphone-container svg{
-    width: 100px;
-    height: 100px;
-    margin: 40px 0 20px;
-}
+ .iphone-container .top-icon{
+    width: 50px;
+    height: 50px;
+ }
 
-.iphone-container .week-weather{
+ .iphone-container .city-name{
+    font-weight: 300;
     color: var(--light-grey);
-    margin-top: 60px;
-    padding: 0 20px;
-    text-align: left;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 1rem;
-}
+ }
+
+ .iphone-container .week{
+    display: flex;
+    justify-content: space-between;
+ }
+
+  .iphone-container .week .day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .iphone-container .week .day .temperature{
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 14px;
+ }
+
+  .iphone-container .week .day .weekday{
+    font-weight: 300;
+    font-size: 15px;
+ }
+
+ .iphone-container .footer{
+    display: flex;
+    justify-content: space-between;
+ }
+
+  .iphone-container .footer svg{
+    width: 30px;
+    height: 30px;
+ }
